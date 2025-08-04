@@ -3,6 +3,8 @@ author: //div[@class='infosAuteur']  | //span[contains(@class,'authorModule__nam
 # [wallabag] can't match on span nodes
 author: substring-before(//div[contains(concat(' ',normalize-space(@class),' '),' author ')] , ' LA PRESSE')
 author: substring-before(//div[contains(concat(' ',normalize-space(@class),' '),' authorModule__details ')],'La Presse')
+author: substring-before(//div[contains(concat(' ',normalize-space(@class),' '),' authorModule__details ')],'Agence France-Presse')
+author: //div[contains(concat(' ',normalize-space(@class),' '),' authorModule__details ')]
 # [wallabag] fix by image alt
 author: //div[@class="authorModule__content"]//img[1]/@alt
 
@@ -16,3 +18,4 @@ test_url: http://www.lapresse.ca/le-soleil/vivre-ici/la-science-au-quotidien/201
 test_url: https://www.lapresse.ca/actualites/politique/2024-11-21/mesures-du-gouvernement-trudeau/un-conge-de-tps-cet-hiver-et-un-cheque-de-250-au-printemps.php
 test_url: https://www.lapresse.ca/actualites/2025-06-14/planification-des-coupes-forestieres/le-forestier-en-chef-du-quebec-vise-par-une-demande-d-enquete.php
 test_url: https://www.lapresse.ca/actualites/sciences/2025-08-02/l-a-b-c-d-une-bombe-atomique.php
+test_url: https://www.lapresse.ca/affaires/medias/2025-08-04/les-assistants-ia-bousculent-la-presse-et-son-modele-economique.php
